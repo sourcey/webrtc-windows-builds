@@ -1,0 +1,17 @@
+commit 0e22a4cfd3790d80ad1ae699891341fe322cb418
+Author: magjed <magjed@webrtc.org>
+Date:   Thu Feb 23 07:11:32 2017 -0800
+
+    Android HW decoder: Support odd heights for non-texture output
+    
+    When textures are not enabled and we are using byte buffer outputs, the
+    decoder is currently crashing for odd heights because of an RTC_CHECK.
+    This CL removes the check and handles the pointer offset to the chroma
+    planes for the odd height case instead.
+    
+    This has been verified to work correctly on a Pixel device.
+    
+    BUG=webrtc:6651
+    
+    Review-Url: https://codereview.webrtc.org/2709923005
+    Cr-Commit-Position: refs/heads/master@{#16805}
