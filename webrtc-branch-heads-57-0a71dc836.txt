@@ -1,0 +1,18 @@
+commit 0a71dc836641acdaaa63b2724f83c822dbb58ce7
+Author: Erik Språng <sprang@webrtc.org>
+Date:   Tue Feb 21 15:18:16 2017 +0100
+
+    Merge to 57: Screen content simulcast layers should not be downscaled.
+    
+    Fix config so, size isn't downscaled, add unit test coverage.
+    
+    BUG=webrtc:7171, webrtc:4172
+    
+    Original Review-Url: https://codereview.webrtc.org/2692343007
+    Original Cr-Commit-Position: refs/heads/master@{#16648}
+    
+    R=mflodman@webrtc.org
+    
+    Review-Url: https://codereview.webrtc.org/2709733002 .
+    Cr-Commit-Position: refs/branch-heads/57@{#6}
+    Cr-Branched-From: e5cbc2019003dbb40e03811d7607feb95757a4ec-refs/heads/master@{#16123}
